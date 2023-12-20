@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    // Использование переменных без явного типа
+    "noImplicitAny": true,
+    // module system
+    "module": "ESNext",
+    // 5 или 6
+    "target": "es5",
+    "jsx": "react",
+    // Обработка не только js но и ts
+    "allowJs": true,
+    "moduleResolution": "node",
+    // esModuleInterop
+    // позволяет рабоатть с пакетами, использующие common js
+    // как с обычными пакетами с помощью import (require() module.export) = common.js
+    "esModuleInterop": true,
+    // allowSyntheticDefaultImports
+    // позволяет использовать именованный именованный импорт
+    // import React from "react"
+    "allowSyntheticDefaultImports": true
+  },
+  // Для сборки
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
