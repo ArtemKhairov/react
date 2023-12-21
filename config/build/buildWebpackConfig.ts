@@ -5,6 +5,7 @@ import { BuildOptions } from "./types/config";
 import { buildLoaders } from "./buildLoaders";
 import { buildResolvers } from "./buildResolvers";
 import { buildPlugins } from "./buildPlugins";
+import { buildDevServer } from "./buildDevServer";
 
 export function buildWebpackConfig(
   options: BuildOptions
@@ -23,5 +24,8 @@ export function buildWebpackConfig(
     },
     resolve: buildResolvers(),
     plugins: buildPlugins(options),
+    // Stacktrace Error
+    devtool: "inline-source-map",
+    devServer: buildDevServer(options),
   };
 }
