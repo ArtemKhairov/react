@@ -10,7 +10,7 @@ import { buildDevServer } from "./buildDevServer";
 export function buildWebpackConfig(
   options: BuildOptions
 ): webpack.Configuration {
-  const { paths, mode } = options;
+  const { paths, mode, isDev } = options;
   return {
     mode: mode,
     entry: paths.entry,
@@ -25,7 +25,7 @@ export function buildWebpackConfig(
     resolve: buildResolvers(),
     plugins: buildPlugins(options),
     // Stacktrace Error
-    devtool: "inline-source-map",
-    devServer: buildDevServer(options),
+    devtool: isDev ? "inline-source-map" : undefined,
+    devServer: isDev ? buildDevServer(options) : undefined,
   };
 }
