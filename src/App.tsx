@@ -3,13 +3,13 @@ import { Route, Routes } from "react-router-dom";
 //
 import { AboutPageLazy } from "./pages/About/AboutPage.async";
 import { MainPageLazy } from "./pages/Main/MainPage.async";
-import { ThemeContext } from "./theme/ThemeContext";
 import { useTheme } from "./theme/useTheme";
+import { classNames } from "./helpers/classNames/classNames";
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames("app", { hover: true, visited: true }, ["cls1", "cls2"])}>
       <button onClick={toggleTheme}>{theme}</button>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
