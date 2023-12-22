@@ -22,7 +22,7 @@ export function buildWebpackConfig(
     module: {
       rules: buildLoaders(options),
     },
-    resolve: buildResolvers(),
+    resolve: buildResolvers(options),
     plugins: buildPlugins(options),
     // Stacktrace Error
     devtool: isDev ? "inline-source-map" : undefined,

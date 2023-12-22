@@ -19,8 +19,11 @@
     // позволяет использовать именованный именованный импорт
     // import React from "react"
     "allowSyntheticDefaultImports": true,
-    // Пути
-    "baseUrl": "."
+    // Для абсолютного импорта
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
   },
   // Для сборки
   "ts-node": {
