@@ -1,3 +1,4 @@
 import { render } from "react-dom";
+import Counter from "./components/Counter/Counter";
 
-render(<div>1234111111111111111111111</div>, document.getElementById("root"));
+render(<Counter />, document.getElementById("root"));
