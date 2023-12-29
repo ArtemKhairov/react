@@ -17,6 +17,26 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     issuer: /\.[jt]sx?$/,
     use: ["@svgr/webpack"],
   };
+  // For i18n
+  const babelLoader = {
+    test: /\.(js|jsx|tsx)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: "babel-loader",
+      options: {
+        presets: ["@babel/preset-env"],
+        plugins: [
+          [
+            "i18next-extract",
+            {
+              locales: ["ru", "en"],
+              keyAsDefaultValue: true,
+            },
+          ],
+        ],
+      },
+    },
+  };
 
   const cssLoader = {
     test: /\.s[ac]ss$/i,
@@ -47,5 +67,5 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     exclude: /node_modules/,
   };
 
-  return [typescriptLoader, cssLoader, svgrLoader, fileLoader];
+  return [babelLoader, typescriptLoader, cssLoader, svgrLoader, fileLoader];
 }

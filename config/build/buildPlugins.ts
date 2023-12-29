@@ -22,5 +22,8 @@ export function buildPlugins({
     new webpack.DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev),
     }),
+    // HMR
+    // Inject code, components without reloading
+    new webpack.HotModuleReplacementPlugin(),
   ];
 }
