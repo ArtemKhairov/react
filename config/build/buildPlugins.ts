@@ -1,9 +1,9 @@
-import { BuildOptions } from "./types/config";
 // Webpack
-import webpack from "webpack";
+import webpack from 'webpack';
 // Plugins
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { BuildOptions } from './types/config';
 
 export function buildPlugins({
   paths,
@@ -15,8 +15,8 @@ export function buildPlugins({
     }),
     new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({
-      filename: "css/[name].[contenthash:8].css",
-      chunkFilename: "css/[name].[contenthash:8].css",
+      filename: 'css/[name].[contenthash:8].css',
+      chunkFilename: 'css/[name].[contenthash:8].css',
     }),
     // Определение глобальных переменных
     new webpack.DefinePlugin({
