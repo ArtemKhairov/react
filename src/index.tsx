@@ -4,6 +4,9 @@ import App from "./app/App";
 import "./app/styles/index.scss";
 import { ThemeProvider } from "app/providers/ThemeProvider";
 
+// Internationalization
+import "shared/config/i18n/i18n";
+
 render(
   <BrowserRouter>
     <ThemeProvider>
