@@ -4,5 +4,7 @@
   "About us": "О нас",
   "Language": "Язык",
   "Toggle": "Переключать",
-  "Page not found": "Страница не найдена"
+  "Page not found": "Страница не найдена",
+  "An unexpected error occurred": "Произошла непредвиденная ошибка",
+  "Reload page": "Перезагрузить станицу"
 }

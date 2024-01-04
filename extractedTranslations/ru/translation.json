@@ -1,6 +1,7 @@
 {
   "About": "About",
   "About us": "About us",
+  "An unexpected error occurred": "An unexpected error occurred",
   "Language": "Language",
   "Loading": {
     "": {
@@ -11,5 +12,6 @@
   },
   "Main": "Main",
   "Page not found": "Page not found",
+  "Reload page": "Reload page",
   "Toggle": "Toggle"
 }
