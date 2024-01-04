@@ -37,7 +37,7 @@ module.exports = {
     quotes: "off",
     "i18next/no-literal-string": [
       "error",
-      { markupOnly: true, ignoreAttribute: ["to"] },
+      { markupOnly: true, ignoreAttribute: ["to", "fallback"] },
     ],
     "max-len": ["error", { ignoreComments: true, code: 100 }],
   },
