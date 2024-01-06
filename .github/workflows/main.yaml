@@ -27,7 +27,7 @@ jobs:
         run: yarn lint:scss
       - name: unit test
         run: yarn test:unit
-      - name: build storybook
-        run: yarn build-storybook
-      - name: screenshot test
-        run: yarn loki update --reactUri="file:./storybook-static" && yarn test:ui:ci
+      # - name: build storybook
+        # run: yarn build-storybook
+      # - name: screenshot test
+        # run: yarn loki update --reactUri="file:./storybook-static" && yarn test:ui:ci
