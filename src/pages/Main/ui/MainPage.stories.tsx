@@ -8,7 +8,7 @@ export default {
   component: MainPage,
 } as Meta<typeof MainPage>;
 
-const Template: StoryFn<typeof MainPage> = (args) => <MainPage {...args} />;
+const Template: StoryFn<typeof MainPage> = (args) => <MainPage />;
 
 export const Light = Template.bind({});
 Light.args = {};
