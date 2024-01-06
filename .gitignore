@@ -133,3 +133,6 @@ dist
 
 # Screenshot Test
 # .loki
+
+# Storybook build
+/storybook-static
