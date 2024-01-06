@@ -8,9 +8,6 @@ import { Button, ThemeButton } from "./Button";
 export default {
   title: "shared/button",
   component: Button,
-//   argTypes: {
-//     backgroundColor: { control: "color" },
-//   },
 } as Meta<typeof Button>;
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;

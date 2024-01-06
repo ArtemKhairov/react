@@ -1,33 +1,10 @@
-import React from "react";
+// import React from "react";
 // Type
-import type {
-  Preview,
-  // StoryFn
-} from "@storybook/react";
-// import { ThemeDecorator } from "../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator";
-import { StyleDecorator } from "../../src/shared/config/storybook/StyleDecorator/StyleDecorator";
+import type { Preview } from "@storybook/react";
+// Style
+import "../../src/app/styles/index.scss";
 
 const preview: Preview = {
-  // decorators: [
-  //   (Story) => (
-  //     <ThemeDecorator>
-  //       <Story />
-  //     </ThemeDecorator>
-  //   ),
-  // ],
-  // decorators: [
-  //   (Story) => (
-  //     <StyleDecorator>
-  //       <Story />
-  //     </StyleDecorator>
-  //   ),
-  // ],
-  // decorators: [
-  //   (Story) => {
-  //     const DecoratorComponent = StyleDecorator(<Story/>);
-  //     return <DecoratorComponent><Story /></DecoratorComponent>;
-  //   },
-  // ],
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
@@ -36,6 +13,8 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    // Themes
+    // docs: {}
   },
 };
 

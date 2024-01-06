@@ -14,6 +14,14 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
+    // Add buildCssLoader for new addon - @storybook/addon-styling
+    {
+      name: "@storybook/addon-styling",
+      options: {
+        cssBuildRule: buildCssLoader(true),
+      },
+    },
+    "@storybook/addon-themes",
   ],
   framework: {
     name: "@storybook/react-webpack5",
@@ -64,10 +72,9 @@ const config: StorybookConfig = {
         test: /\.svg$/,
         use: ["@svgr/webpack"],
       });
-      console.log(buildCssLoader(true));
+      // Add buildCssLoader as module rule and additional option in Addon
       config.module.rules.push(buildCssLoader(true));
     }
-    console.log(config.module.rules);
     return config;
   },
 };

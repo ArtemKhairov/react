@@ -3316,6 +3316,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-styling@npm:^2.0.2-next.4":
+  version: 2.0.2-next.4
+  resolution: "@storybook/addon-styling@npm:2.0.2-next.4"
+  dependencies:
+    "@storybook/api": "npm:^7.0.12"
+    "@storybook/components": "npm:^7.0.12"
+    "@storybook/core-common": "npm:^7.0.12"
+    "@storybook/core-events": "npm:^7.0.12"
+    "@storybook/manager-api": "npm:^7.0.12"
+    "@storybook/node-logger": "npm:^7.0.12"
+    "@storybook/types": "npm:^7.0.12"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    webpack: ^5.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+    webpack:
+      optional: true
+  bin:
+    addon-styling-setup: postinstall.js
+  checksum: 329580f17c7449ad385263af047eeae675b116024110aabb39a60140ce6b1ba7fbfd0ed753f27f4dba8d78ca357cba9a3f6b95dc572fe49cf48462a7fb6caf3c
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-themes@npm:^7.6.7":
+  version: 7.6.7
+  resolution: "@storybook/addon-themes@npm:7.6.7"
+  dependencies:
+    ts-dedent: "npm:^2.0.0"
+  checksum: c024fb80b609be220bba50695798356dfa364d6acb4b150f069a3e5f5fc9fcd46a5fd81c2a28e058c1b2b4368d2c03e81d40bd842a1d591366a3ad7ca050299b
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-toolbars@npm:7.6.7":
   version: 7.6.7
   resolution: "@storybook/addon-toolbars@npm:7.6.7"
@@ -3329,6 +3366,16 @@ __metadata:
   dependencies:
     memoizerific: "npm:^1.11.3"
   checksum: 7b62b06110df6dd407a66585a8fc79857772ab766253bfcf764958d79e7fec4ac582fd4dada561d00cadd5471cb3ff36db260ed44c57282d2079037c1d021f80
+  languageName: node
+  linkType: hard
+
+"@storybook/api@npm:^7.0.12":
+  version: 7.6.7
+  resolution: "@storybook/api@npm:7.6.7"
+  dependencies:
+    "@storybook/client-logger": "npm:7.6.7"
+    "@storybook/manager-api": "npm:7.6.7"
+  checksum: ecbcf89d1f8e596433580df0e31b6fe255ed650ea4a61f890359b5abfa6bfc84e6976f386e218fd9b1b0ee540594a59fb271366fd1732f947c25c6dc18631bbd
   languageName: node
   linkType: hard
 
@@ -3535,7 +3582,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:7.6.7":
+"@storybook/components@npm:7.6.7, @storybook/components@npm:^7.0.12":
   version: 7.6.7
   resolution: "@storybook/components@npm:7.6.7"
   dependencies:
@@ -3566,7 +3613,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-common@npm:7.6.7":
+"@storybook/core-common@npm:7.6.7, @storybook/core-common@npm:^7.0.12":
   version: 7.6.7
   resolution: "@storybook/core-common@npm:7.6.7"
   dependencies:
@@ -3597,7 +3644,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-events@npm:7.6.7":
+"@storybook/core-events@npm:7.6.7, @storybook/core-events@npm:^7.0.12":
   version: 7.6.7
   resolution: "@storybook/core-events@npm:7.6.7"
   dependencies:
@@ -3748,7 +3795,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:7.6.7":
+"@storybook/manager-api@npm:7.6.7, @storybook/manager-api@npm:^7.0.12":
   version: 7.6.7
   resolution: "@storybook/manager-api@npm:7.6.7"
   dependencies:
@@ -3784,7 +3831,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/node-logger@npm:7.6.7":
+"@storybook/node-logger@npm:7.6.7, @storybook/node-logger@npm:^7.0.12":
   version: 7.6.7
   resolution: "@storybook/node-logger@npm:7.6.7"
   checksum: a5e270cf827cbec21b4900ce6424913e038d9123092140b3b99bb957fba35d346500c1af238f49fb95f77ecf7feddcc92bf68178a7ada7d02a24aae43429a1fb
@@ -4009,7 +4056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/types@npm:7.6.7":
+"@storybook/types@npm:7.6.7, @storybook/types@npm:^7.0.12":
   version: 7.6.7
   resolution: "@storybook/types@npm:7.6.7"
   dependencies:
@@ -13320,6 +13367,8 @@ __metadata:
     "@storybook/addon-interactions": "npm:7.6.7"
     "@storybook/addon-links": "npm:7.6.7"
     "@storybook/addon-onboarding": "npm:1.0.10"
+    "@storybook/addon-styling": "npm:^2.0.2-next.4"
+    "@storybook/addon-themes": "npm:^7.6.7"
     "@storybook/blocks": "npm:7.6.7"
     "@storybook/react": "npm:7.6.7"
     "@storybook/react-webpack5": "npm:7.6.7"
