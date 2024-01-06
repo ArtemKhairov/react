@@ -12,22 +12,22 @@ jobs:
         node-version: [20.10.0]
 
     steps:
-      -uses: actions/checkout@v2
-      -name: Staring Node.js ${{ matrix.node-version }}
+      - uses: actions/checkout@v2
+      - name: Staring Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      -name: install packages
+      - name: install packages
         run: yarn install
-      -name: build production
+      - name: build production
         run: yarn build:prod
-      -name: lint ts
+      - name: lint ts
         run: yarn lint:ts
-      -name: lint css
+      - name: lint css
         run: yarn lint:scss
-      -name: unit test
+      - name: unit test
         run: yarn test:unit
-      -name: build storybook
+      - name: build storybook
         run: yarn build-storybook
-      -name: screenshot test
+      - name: screenshot test
         run: test:ui:ci
