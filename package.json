@@ -54,6 +54,7 @@
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.5.1",
+    "loki": "^0.33.1",
     "mini-css-extract-plugin": "^2.5.3",
     "react-refresh": "^0.14.0",
     "regenerator-runtime": "0.13.9",
@@ -96,5 +97,20 @@
   },
   "homepage": "https://github.com/ArtemKhairov/react#readme",
   "description": "",
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
+  }
 }
