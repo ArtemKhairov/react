@@ -81,9 +81,11 @@
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "lint:all": "npx stylelint \"**/*.scss\" --fix && eslint \"**/*.{ts,tsx}\" --fix",
-    "unit": "jest --config ./config/jest/jest.config.ts",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build -c ./config/storybook"
+    "build-storybook": "storybook build -c ./config/storybook",
+    "test:ui": "npx loki test",
+    "test:ui:ok": "npx loki approve",
+    "test:unit": "jest --config ./config/jest/jest.config.ts"
   },
   "repository": {
     "type": "git",
