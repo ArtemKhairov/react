@@ -6,7 +6,7 @@ import { Theme } from "app/providers/ThemeProvider";
 import { Button, ThemeButton } from "./Button";
 
 export default {
-  title: "shared/button",
+  title: "shared/Button",
   component: Button,
 } as Meta<typeof Button>;
 
@@ -14,24 +14,25 @@ const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  children: "Text",
+  children: "Button",
+  theme: ThemeButton.OUTLINE,
 };
 
 export const Clear = Template.bind({});
 Clear.args = {
-  children: "Text",
+  children: "Clear",
   theme: ThemeButton.CLEAR,
 };
 
 export const Outline = Template.bind({});
 Outline.args = {
-  children: "Text",
+  children: "Button",
   theme: ThemeButton.OUTLINE,
 };
 
 export const OutlineDark = Template.bind({});
 OutlineDark.args = {
-  children: "Text",
+  children: "Button",
   theme: ThemeButton.OUTLINE,
 };
 OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];

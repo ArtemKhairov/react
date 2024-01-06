@@ -19,7 +19,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@storybook/addon-essentials": "7.6.7",
     "@storybook/addon-interactions": "7.6.7",
-    "@storybook/addon-links": "7.6.7",
+    "@storybook/addon-links": "^7.6.7",
     "@storybook/addon-onboarding": "1.0.10",
     "@storybook/addon-styling": "^2.0.2-next.4",
     "@storybook/addon-themes": "^7.6.7",

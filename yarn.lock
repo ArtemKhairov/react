@@ -3267,7 +3267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:7.6.7":
+"@storybook/addon-links@npm:^7.6.7":
   version: 7.6.7
   resolution: "@storybook/addon-links@npm:7.6.7"
   dependencies:
@@ -13365,7 +13365,7 @@ __metadata:
     "@pmmmwh/react-refresh-webpack-plugin": "npm:^0.5.11"
     "@storybook/addon-essentials": "npm:7.6.7"
     "@storybook/addon-interactions": "npm:7.6.7"
-    "@storybook/addon-links": "npm:7.6.7"
+    "@storybook/addon-links": "npm:^7.6.7"
     "@storybook/addon-onboarding": "npm:1.0.10"
     "@storybook/addon-styling": "npm:^2.0.2-next.4"
     "@storybook/addon-themes": "npm:^7.6.7"
