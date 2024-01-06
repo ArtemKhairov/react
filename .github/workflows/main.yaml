@@ -30,4 +30,4 @@ jobs:
       - name: build storybook
         run: yarn build-storybook
       - name: screenshot test
-        run: yarn test:ui:ci
+        run: loki update --reactUri="file:./storybook-static" && yarn test:ui:ci
