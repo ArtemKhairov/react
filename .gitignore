@@ -132,7 +132,8 @@ dist
 .pnp.*
 
 # Screenshot Test
-# .loki
+.loki/report.html
+.loki/report.json
 
 # Storybook build
 /storybook-static
